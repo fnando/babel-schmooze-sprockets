@@ -79,7 +79,7 @@ npm install --save-dev \
 
 Then you can install your custom plugin with `npm install --save-dev <your custom plugin>`.
 
-You'll also have to redefine Sprocket's Babel initialization. Create a file at `config/initializers/babel.rb`; the following example is the default configuration, so you should :
+You'll also have to redefine Sprocket's Babel initialization. Create a file at `config/initializers/babel.rb`; the following example extends the default configuration:
 
 ```ruby
 Rails.application.config.assets.configure do |env|
