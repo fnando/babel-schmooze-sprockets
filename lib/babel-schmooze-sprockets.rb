@@ -11,4 +11,10 @@ module BabelSchmoozeSprockets
     "application/javascript",
     BabelProcessor
   )
+
+  begin
+    require "rails"
+    require "babel-schmooze-sprockets/railtie"
+  rescue LoadError
+  end
 end

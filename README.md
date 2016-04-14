@@ -97,6 +97,14 @@ end
 
 You may configure the presets and plugins lists as you wish.
 
+### Using async/await
+
+Make sure you require `babel-polyfill` in your main file (e.g. `application.js`) like the following:
+
+```js
+//= require babel-polyfill/dist/polyfill
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
