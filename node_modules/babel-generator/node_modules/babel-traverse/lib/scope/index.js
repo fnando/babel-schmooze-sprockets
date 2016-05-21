@@ -18,15 +18,15 @@ var _getIterator2 = require("babel-runtime/core-js/get-iterator");
 
 var _getIterator3 = _interopRequireDefault(_getIterator2);
 
-var /*istanbul ignore next*/_includes = require("lodash/collection/includes");
+var /*istanbul ignore next*/_includes = require("lodash/includes");
 
 /*istanbul ignore next*/
 var _includes2 = _interopRequireDefault(_includes);
 
-var /*istanbul ignore next*/_repeating = require("repeating");
+var /*istanbul ignore next*/_repeat = require("lodash/repeat");
 
 /*istanbul ignore next*/
-var _repeating2 = _interopRequireDefault(_repeating);
+var _repeat2 = _interopRequireDefault(_repeat);
 
 var /*istanbul ignore next*/_renamer = require("./lib/renamer");
 
@@ -38,7 +38,7 @@ var /*istanbul ignore next*/_index = require("../index");
 /*istanbul ignore next*/
 var _index2 = _interopRequireDefault(_index);
 
-var /*istanbul ignore next*/_defaults = require("lodash/object/defaults");
+var /*istanbul ignore next*/_defaults = require("lodash/defaults");
 
 /*istanbul ignore next*/
 var _defaults2 = _interopRequireDefault(_defaults);
@@ -507,7 +507,7 @@ var Scope = function () {
   };
 
   Scope.prototype.dump = function dump() {
-    var sep = /*istanbul ignore next*/(0, _repeating2.default)("-", 60);
+    var sep = /*istanbul ignore next*/(0, _repeat2.default)("-", 60);
     console.log(sep);
     var scope = this;
     do {

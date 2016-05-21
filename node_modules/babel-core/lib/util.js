@@ -28,17 +28,17 @@ Object.defineProperty(exports, "inherits", {
 /*istanbul ignore next*/exports.booleanify = booleanify;
 /*istanbul ignore next*/exports.shouldIgnore = shouldIgnore;
 
-var /*istanbul ignore next*/_escapeRegExp = require("lodash/string/escapeRegExp");
+var /*istanbul ignore next*/_escapeRegExp = require("lodash/escapeRegExp");
 
 /*istanbul ignore next*/
 var _escapeRegExp2 = _interopRequireDefault(_escapeRegExp);
 
-var /*istanbul ignore next*/_startsWith = require("lodash/string/startsWith");
+var /*istanbul ignore next*/_startsWith = require("lodash/startsWith");
 
 /*istanbul ignore next*/
 var _startsWith2 = _interopRequireDefault(_startsWith);
 
-var /*istanbul ignore next*/_isBoolean = require("lodash/lang/isBoolean");
+var /*istanbul ignore next*/_isBoolean = require("lodash/isBoolean");
 
 /*istanbul ignore next*/
 var _isBoolean2 = _interopRequireDefault(_isBoolean);
@@ -48,17 +48,17 @@ var /*istanbul ignore next*/_minimatch = require("minimatch");
 /*istanbul ignore next*/
 var _minimatch2 = _interopRequireDefault(_minimatch);
 
-var /*istanbul ignore next*/_contains = require("lodash/collection/contains");
+var /*istanbul ignore next*/_includes = require("lodash/includes");
 
 /*istanbul ignore next*/
-var _contains2 = _interopRequireDefault(_contains);
+var _includes2 = _interopRequireDefault(_includes);
 
-var /*istanbul ignore next*/_isString = require("lodash/lang/isString");
+var /*istanbul ignore next*/_isString = require("lodash/isString");
 
 /*istanbul ignore next*/
 var _isString2 = _interopRequireDefault(_isString);
 
-var /*istanbul ignore next*/_isRegExp = require("lodash/lang/isRegExp");
+var /*istanbul ignore next*/_isRegExp = require("lodash/isRegExp");
 
 /*istanbul ignore next*/
 var _isRegExp2 = _interopRequireDefault(_isRegExp);
@@ -82,7 +82,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function canCompile(filename, altExts) {
   var exts = altExts || canCompile.EXTENSIONS;
   var ext = /*istanbul ignore next*/_path2.default.extname(filename);
-  return (/*istanbul ignore next*/(0, _contains2.default)(exts, ext)
+  return (/*istanbul ignore next*/(0, _includes2.default)(exts, ext)
   );
 }
 

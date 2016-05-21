@@ -21,10 +21,10 @@ exports.WithStatement = WithStatement;
 /*istanbul ignore next*/exports.VariableDeclaration = VariableDeclaration;
 /*istanbul ignore next*/exports.VariableDeclarator = VariableDeclarator;
 
-var /*istanbul ignore next*/_repeating = require("repeating");
+var /*istanbul ignore next*/_repeat = require("lodash/repeat");
 
 /*istanbul ignore next*/
-var _repeating2 = _interopRequireDefault(_repeating);
+var _repeat2 = _interopRequireDefault(_repeat);
 
 var /*istanbul ignore next*/_babelTypes = require("babel-types");
 
@@ -279,7 +279,7 @@ function VariableDeclaration(node, parent) {
 
   var sep = /*istanbul ignore next*/void 0;
   if (!this.format.compact && !this.format.concise && hasInits && !this.format.retainLines) {
-    sep = /*istanbul ignore next*/",\n" + /*istanbul ignore next*/(0, _repeating2.default)(" ", node.kind.length + 1);
+    sep = /*istanbul ignore next*/",\n" + /*istanbul ignore next*/(0, _repeat2.default)(" ", node.kind.length + 1);
   }
 
   //

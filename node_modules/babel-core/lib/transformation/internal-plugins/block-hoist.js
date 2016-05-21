@@ -7,7 +7,7 @@ var /*istanbul ignore next*/_plugin = require("../plugin");
 /*istanbul ignore next*/
 var _plugin2 = _interopRequireDefault(_plugin);
 
-var /*istanbul ignore next*/_sortBy = require("lodash/collection/sortBy");
+var /*istanbul ignore next*/_sortBy = require("lodash/sortBy");
 
 /*istanbul ignore next*/
 var _sortBy2 = _interopRequireDefault(_sortBy);

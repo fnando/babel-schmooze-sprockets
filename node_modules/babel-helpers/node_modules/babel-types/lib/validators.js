@@ -165,7 +165,7 @@ function isReferenced(node, parent) {
     case "ClassExpression":
       return parent.id !== node;
 
-    // yes: class { [NODE](){} }
+    // yes: class { [NODE]() {} }
     case "ClassMethod":
     case "ObjectMethod":
       return parent.key === node && parent.computed;

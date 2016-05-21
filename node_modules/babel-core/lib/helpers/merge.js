@@ -9,7 +9,7 @@ var _getIterator3 = _interopRequireDefault(_getIterator2);
 exports.default = function (dest, src) {
   if (!dest || !src) return;
 
-  return (/*istanbul ignore next*/(0, _merge2.default)(dest, src, function (a, b) {
+  return (/*istanbul ignore next*/(0, _mergeWith2.default)(dest, src, function (a, b) {
       if (b && Array.isArray(a)) {
         var newArray = b.slice(0);
 
@@ -39,10 +39,10 @@ exports.default = function (dest, src) {
   );
 };
 
-var /*istanbul ignore next*/_merge = require("lodash/object/merge");
+var /*istanbul ignore next*/_mergeWith = require("lodash/mergeWith");
 
 /*istanbul ignore next*/
-var _merge2 = _interopRequireDefault(_merge);
+var _mergeWith2 = _interopRequireDefault(_mergeWith);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

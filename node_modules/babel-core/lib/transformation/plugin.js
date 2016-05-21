@@ -38,12 +38,12 @@ var /*istanbul ignore next*/_babelTraverse = require("babel-traverse");
 /*istanbul ignore next*/
 var _babelTraverse2 = _interopRequireDefault(_babelTraverse);
 
-var /*istanbul ignore next*/_assign = require("lodash/object/assign");
+var /*istanbul ignore next*/_assign = require("lodash/assign");
 
 /*istanbul ignore next*/
 var _assign2 = _interopRequireDefault(_assign);
 
-var /*istanbul ignore next*/_clone = require("lodash/lang/clone");
+var /*istanbul ignore next*/_clone = require("lodash/clone");
 
 /*istanbul ignore next*/
 var _clone2 = _interopRequireDefault(_clone);

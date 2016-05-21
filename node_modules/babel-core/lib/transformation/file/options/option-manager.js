@@ -59,12 +59,12 @@ var /*istanbul ignore next*/_pathExists = require("path-exists");
 /*istanbul ignore next*/
 var _pathExists2 = _interopRequireDefault(_pathExists);
 
-var /*istanbul ignore next*/_cloneDeep = require("lodash/lang/cloneDeep");
+var /*istanbul ignore next*/_cloneDeepWith = require("lodash/cloneDeepWith");
 
 /*istanbul ignore next*/
-var _cloneDeep2 = _interopRequireDefault(_cloneDeep);
+var _cloneDeepWith2 = _interopRequireDefault(_cloneDeepWith);
 
-var /*istanbul ignore next*/_clone = require("lodash/lang/clone");
+var /*istanbul ignore next*/_clone = require("lodash/clone");
 
 /*istanbul ignore next*/
 var _clone2 = _interopRequireDefault(_clone);
@@ -284,7 +284,7 @@ var OptionManager = function () {
     }
 
     //
-    var opts = /*istanbul ignore next*/(0, _cloneDeep2.default)(rawOpts, function (val) {
+    var opts = /*istanbul ignore next*/(0, _cloneDeepWith2.default)(rawOpts, function (val) {
       if (val instanceof /*istanbul ignore next*/_plugin3.default) {
         return val;
       }

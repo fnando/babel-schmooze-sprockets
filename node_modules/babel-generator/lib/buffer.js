@@ -6,15 +6,15 @@ var _classCallCheck2 = require("babel-runtime/helpers/classCallCheck");
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var /*istanbul ignore next*/_repeating = require("repeating");
+var /*istanbul ignore next*/_repeat = require("lodash/repeat");
 
 /*istanbul ignore next*/
-var _repeating2 = _interopRequireDefault(_repeating);
+var _repeat2 = _interopRequireDefault(_repeat);
 
-var /*istanbul ignore next*/_trimRight = require("trim-right");
+var /*istanbul ignore next*/_trimEnd = require("lodash/trimEnd");
 
 /*istanbul ignore next*/
-var _trimRight2 = _interopRequireDefault(_trimRight);
+var _trimEnd2 = _interopRequireDefault(_trimEnd);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -64,7 +64,7 @@ var Buffer = function () {
    */
 
   Buffer.prototype.get = function get() {
-    return (/*istanbul ignore next*/(0, _trimRight2.default)(this.buf)
+    return (/*istanbul ignore next*/(0, _trimEnd2.default)(this.buf)
     );
   };
 
@@ -76,7 +76,7 @@ var Buffer = function () {
     if (this.format.compact || this.format.concise) {
       return "";
     } else {
-      return (/*istanbul ignore next*/(0, _repeating2.default)(this.format.indent.style, this._indent)
+      return (/*istanbul ignore next*/(0, _repeat2.default)(this.format.indent.style, this._indent)
       );
     }
   };
@@ -234,7 +234,7 @@ var Buffer = function () {
 
     this.removeLast(" ");
     this._removeSpacesAfterLastNewline();
-    this._push( /*istanbul ignore next*/(0, _repeating2.default)("\n", i));
+    this._push( /*istanbul ignore next*/(0, _repeat2.default)("\n", i));
   };
 
   /**

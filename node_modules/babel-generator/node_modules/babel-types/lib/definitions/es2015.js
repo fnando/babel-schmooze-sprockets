@@ -16,6 +16,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     },
     right: {
       validate: /*istanbul ignore next*/(0, _index.assertNodeType)("Expression")
+    },
+    decorators: {
+      validate: /*istanbul ignore next*/(0, _index.chain)( /*istanbul ignore next*/(0, _index.assertValueType)("array"), /*istanbul ignore next*/(0, _index.assertEach)( /*istanbul ignore next*/(0, _index.assertNodeType)("Decorator")))
     }
   }
 }); /* eslint max-len: 0 */
@@ -26,6 +29,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   fields: {
     elements: {
       validate: /*istanbul ignore next*/(0, _index.chain)( /*istanbul ignore next*/(0, _index.assertValueType)("array"), /*istanbul ignore next*/(0, _index.assertEach)( /*istanbul ignore next*/(0, _index.assertNodeType)("Expression")))
+    },
+    decorators: {
+      validate: /*istanbul ignore next*/(0, _index.chain)( /*istanbul ignore next*/(0, _index.assertValueType)("array"), /*istanbul ignore next*/(0, _index.assertEach)( /*istanbul ignore next*/(0, _index.assertNodeType)("Decorator")))
     }
   }
 });
@@ -272,6 +278,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   fields: {
     properties: {
       validate: /*istanbul ignore next*/(0, _index.chain)( /*istanbul ignore next*/(0, _index.assertValueType)("array"), /*istanbul ignore next*/(0, _index.assertEach)( /*istanbul ignore next*/(0, _index.assertNodeType)("RestProperty", "Property")))
+    },
+    decorators: {
+      validate: /*istanbul ignore next*/(0, _index.chain)( /*istanbul ignore next*/(0, _index.assertValueType)("array"), /*istanbul ignore next*/(0, _index.assertEach)( /*istanbul ignore next*/(0, _index.assertNodeType)("Decorator")))
     }
   }
 });

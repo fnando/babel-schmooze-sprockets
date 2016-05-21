@@ -26,10 +26,10 @@ var _inherits2 = require("babel-runtime/helpers/inherits");
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var /*istanbul ignore next*/_repeating = require("repeating");
+var /*istanbul ignore next*/_repeat = require("lodash/repeat");
 
 /*istanbul ignore next*/
-var _repeating2 = _interopRequireDefault(_repeating);
+var _repeat2 = _interopRequireDefault(_repeat);
 
 var /*istanbul ignore next*/_buffer = require("./buffer");
 
@@ -382,7 +382,7 @@ var Printer = function (_Buffer) {
         }
 
         var indent = Math.max( /*istanbul ignore next*/_this4.indentSize(), column);
-        val = val.replace(/\n/g, /*istanbul ignore next*/"\n" + /*istanbul ignore next*/(0, _repeating2.default)(" ", indent));
+        val = val.replace(/\n/g, /*istanbul ignore next*/"\n" + /*istanbul ignore next*/(0, _repeat2.default)(" ", indent));
       }
 
       if (column === 0) {

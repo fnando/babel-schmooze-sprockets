@@ -30,7 +30,7 @@ var /*istanbul ignore next*/_index = require("../index");
 /*istanbul ignore next*/
 var _index2 = _interopRequireDefault(_index);
 
-var /*istanbul ignore next*/_assign = require("lodash/object/assign");
+var /*istanbul ignore next*/_assign = require("lodash/assign");
 
 /*istanbul ignore next*/
 var _assign2 = _interopRequireDefault(_assign);

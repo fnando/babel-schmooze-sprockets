@@ -81,6 +81,9 @@ var Binding = function () {
    */
 
   Binding.prototype.reference = function reference(path) {
+    if (this.referencePaths.indexOf(path) !== -1) {
+      return;
+    }
     this.referenced = true;
     this.references++;
     this.referencePaths.push(path);

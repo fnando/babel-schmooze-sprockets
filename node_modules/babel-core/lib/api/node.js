@@ -51,7 +51,7 @@ Object.defineProperty(exports, "version", {
 /*istanbul ignore next*/exports.transformFile = transformFile;
 /*istanbul ignore next*/exports.transformFileSync = transformFileSync;
 
-var /*istanbul ignore next*/_isFunction = require("lodash/lang/isFunction");
+var /*istanbul ignore next*/_isFunction = require("lodash/isFunction");
 
 /*istanbul ignore next*/
 var _isFunction2 = _interopRequireDefault(_isFunction);

@@ -54,7 +54,7 @@ var /*istanbul ignore next*/_babelMessages = require("babel-messages");
 /*istanbul ignore next*/
 var messages = _interopRequireWildcard(_babelMessages);
 
-var /*istanbul ignore next*/_includes = require("lodash/collection/includes");
+var /*istanbul ignore next*/_includes = require("lodash/includes");
 
 /*istanbul ignore next*/
 var _includes2 = _interopRequireDefault(_includes);

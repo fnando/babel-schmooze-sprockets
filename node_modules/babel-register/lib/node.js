@@ -24,7 +24,7 @@ exports.default = function () {
   /*istanbul ignore next*/(0, _extend2.default)(transformOpts, opts);
 };
 
-var /*istanbul ignore next*/_cloneDeep = require("lodash/lang/cloneDeep");
+var /*istanbul ignore next*/_cloneDeep = require("lodash/cloneDeep");
 
 /*istanbul ignore next*/
 var _cloneDeep2 = _interopRequireDefault(_cloneDeep);
@@ -39,7 +39,7 @@ var /*istanbul ignore next*/_cache = require("./cache");
 /*istanbul ignore next*/
 var registerCache = _interopRequireWildcard(_cache);
 
-var /*istanbul ignore next*/_extend = require("lodash/object/extend");
+var /*istanbul ignore next*/_extend = require("lodash/extend");
 
 /*istanbul ignore next*/
 var _extend2 = _interopRequireDefault(_extend);
@@ -49,7 +49,7 @@ var /*istanbul ignore next*/_babelCore = require("babel-core");
 /*istanbul ignore next*/
 var babel = _interopRequireWildcard(_babelCore);
 
-var /*istanbul ignore next*/_each = require("lodash/collection/each");
+var /*istanbul ignore next*/_each = require("lodash/each");
 
 /*istanbul ignore next*/
 var _each2 = _interopRequireDefault(_each);

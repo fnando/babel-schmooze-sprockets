@@ -1,16 +1,16 @@
 /*istanbul ignore next*/"use strict";
 
-var /*istanbul ignore next*/_isBoolean = require("lodash/lang/isBoolean");
+var /*istanbul ignore next*/_isBoolean = require("lodash/isBoolean");
 
 /*istanbul ignore next*/
 var _isBoolean2 = _interopRequireDefault(_isBoolean);
 
-var /*istanbul ignore next*/_each = require("lodash/collection/each");
+var /*istanbul ignore next*/_each = require("lodash/each");
 
 /*istanbul ignore next*/
 var _each2 = _interopRequireDefault(_each);
 
-var /*istanbul ignore next*/_map = require("lodash/collection/map");
+var /*istanbul ignore next*/_map = require("lodash/map");
 
 /*istanbul ignore next*/
 var _map2 = _interopRequireDefault(_map);

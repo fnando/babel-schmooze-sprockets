@@ -56,17 +56,17 @@ exports.default = function (code, opts) {
   };
 };
 
-var /*istanbul ignore next*/_cloneDeep = require("lodash/lang/cloneDeep");
+var /*istanbul ignore next*/_cloneDeep = require("lodash/cloneDeep");
 
 /*istanbul ignore next*/
 var _cloneDeep2 = _interopRequireDefault(_cloneDeep);
 
-var /*istanbul ignore next*/_assign = require("lodash/object/assign");
+var /*istanbul ignore next*/_assign = require("lodash/assign");
 
 /*istanbul ignore next*/
 var _assign2 = _interopRequireDefault(_assign);
 
-var /*istanbul ignore next*/_has = require("lodash/object/has");
+var /*istanbul ignore next*/_has = require("lodash/has");
 
 /*istanbul ignore next*/
 var _has2 = _interopRequireDefault(_has);

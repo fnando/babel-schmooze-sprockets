@@ -33,7 +33,7 @@ var /*istanbul ignore next*/_babelTypes = require("babel-types");
 /*istanbul ignore next*/
 var t = _interopRequireWildcard(_babelTypes);
 
-var /*istanbul ignore next*/_clone = require("lodash/lang/clone");
+var /*istanbul ignore next*/_clone = require("lodash/clone");
 
 /*istanbul ignore next*/
 var _clone2 = _interopRequireDefault(_clone);

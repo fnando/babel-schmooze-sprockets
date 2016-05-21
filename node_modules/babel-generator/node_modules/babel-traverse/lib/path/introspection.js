@@ -29,7 +29,7 @@ exports.matchesPattern = matchesPattern;
 /*istanbul ignore next*/exports.resolve = resolve;
 /*istanbul ignore next*/exports._resolve = _resolve;
 
-var /*istanbul ignore next*/_includes = require("lodash/collection/includes");
+var /*istanbul ignore next*/_includes = require("lodash/includes");
 
 /*istanbul ignore next*/
 var _includes2 = _interopRequireDefault(_includes);

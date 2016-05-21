@@ -24,22 +24,22 @@ exports.toComputedKey = toComputedKey;
 /*istanbul ignore next*/exports.toBlock = toBlock;
 /*istanbul ignore next*/exports.valueToNode = valueToNode;
 
-var /*istanbul ignore next*/_isPlainObject = require("lodash/lang/isPlainObject");
+var /*istanbul ignore next*/_isPlainObject = require("lodash/isPlainObject");
 
 /*istanbul ignore next*/
 var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
 
-var /*istanbul ignore next*/_isNumber = require("lodash/lang/isNumber");
+var /*istanbul ignore next*/_isNumber = require("lodash/isNumber");
 
 /*istanbul ignore next*/
 var _isNumber2 = _interopRequireDefault(_isNumber);
 
-var /*istanbul ignore next*/_isRegExp = require("lodash/lang/isRegExp");
+var /*istanbul ignore next*/_isRegExp = require("lodash/isRegExp");
 
 /*istanbul ignore next*/
 var _isRegExp2 = _interopRequireDefault(_isRegExp);
 
-var /*istanbul ignore next*/_isString = require("lodash/lang/isString");
+var /*istanbul ignore next*/_isString = require("lodash/isString");
 
 /*istanbul ignore next*/
 var _isString2 = _interopRequireDefault(_isString);

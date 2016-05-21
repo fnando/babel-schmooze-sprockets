@@ -81,7 +81,7 @@ var /*istanbul ignore next*/_babelCodeFrame = require("babel-code-frame");
 /*istanbul ignore next*/
 var _babelCodeFrame2 = _interopRequireDefault(_babelCodeFrame);
 
-var /*istanbul ignore next*/_defaults = require("lodash/object/defaults");
+var /*istanbul ignore next*/_defaults = require("lodash/defaults");
 
 /*istanbul ignore next*/
 var _defaults2 = _interopRequireDefault(_defaults);

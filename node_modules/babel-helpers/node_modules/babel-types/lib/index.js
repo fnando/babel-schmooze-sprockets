@@ -306,22 +306,22 @@ var /*istanbul ignore next*/_toFastProperties = require("to-fast-properties");
 /*istanbul ignore next*/
 var _toFastProperties2 = _interopRequireDefault(_toFastProperties);
 
-var /*istanbul ignore next*/_compact = require("lodash/array/compact");
+var /*istanbul ignore next*/_compact = require("lodash/compact");
 
 /*istanbul ignore next*/
 var _compact2 = _interopRequireDefault(_compact);
 
-var /*istanbul ignore next*/_clone = require("lodash/lang/clone");
+var /*istanbul ignore next*/_clone = require("lodash/clone");
 
 /*istanbul ignore next*/
 var _clone2 = _interopRequireDefault(_clone);
 
-var /*istanbul ignore next*/_each = require("lodash/collection/each");
+var /*istanbul ignore next*/_each = require("lodash/each");
 
 /*istanbul ignore next*/
 var _each2 = _interopRequireDefault(_each);
 
-var /*istanbul ignore next*/_uniq = require("lodash/array/uniq");
+var /*istanbul ignore next*/_uniq = require("lodash/uniq");
 
 /*istanbul ignore next*/
 var _uniq2 = _interopRequireDefault(_uniq);

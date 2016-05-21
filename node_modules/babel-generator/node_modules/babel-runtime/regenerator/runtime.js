@@ -1,26 +1,26 @@
 "use strict";
 
-var _promise = require("babel-runtime/core-js/promise");
+var _promise = require("../core-js/promise");
 
 var _promise2 = _interopRequireDefault(_promise);
 
-var _setPrototypeOf = require("babel-runtime/core-js/object/set-prototype-of");
+var _setPrototypeOf = require("../core-js/object/set-prototype-of");
 
 var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
 
-var _create = require("babel-runtime/core-js/object/create");
+var _create = require("../core-js/object/create");
 
 var _create2 = _interopRequireDefault(_create);
 
-var _typeof2 = require("babel-runtime/helpers/typeof");
+var _typeof2 = require("../helpers/typeof");
 
 var _typeof3 = _interopRequireDefault(_typeof2);
 
-var _iterator = require("babel-runtime/core-js/symbol/iterator");
+var _iterator = require("../core-js/symbol/iterator");
 
 var _iterator2 = _interopRequireDefault(_iterator);
 
-var _symbol = require("babel-runtime/core-js/symbol");
+var _symbol = require("../core-js/symbol");
 
 var _symbol2 = _interopRequireDefault(_symbol);
 

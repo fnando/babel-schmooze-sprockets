@@ -21,12 +21,12 @@ exports.UnaryExpression = UnaryExpression;
 /*istanbul ignore next*/exports.MemberExpression = MemberExpression;
 /*istanbul ignore next*/exports.MetaProperty = MetaProperty;
 
-var /*istanbul ignore next*/_isInteger = require("is-integer");
+var /*istanbul ignore next*/_isInteger = require("lodash/isInteger");
 
 /*istanbul ignore next*/
 var _isInteger2 = _interopRequireDefault(_isInteger);
 
-var /*istanbul ignore next*/_isNumber = require("lodash/lang/isNumber");
+var /*istanbul ignore next*/_isNumber = require("lodash/isNumber");
 
 /*istanbul ignore next*/
 var _isNumber2 = _interopRequireDefault(_isNumber);

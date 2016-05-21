@@ -298,6 +298,9 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
           // todo
         }
       }
+    },
+    decorators: {
+      validate: /*istanbul ignore next*/(0, _index2.chain)( /*istanbul ignore next*/(0, _index2.assertValueType)("array"), /*istanbul ignore next*/(0, _index2.assertEach)( /*istanbul ignore next*/(0, _index2.assertNodeType)("Decorator")))
     }
   }
 });
@@ -528,6 +531,9 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
   fields: {
     argument: {
       validate: /*istanbul ignore next*/(0, _index2.assertNodeType)("LVal")
+    },
+    decorators: {
+      validate: /*istanbul ignore next*/(0, _index2.chain)( /*istanbul ignore next*/(0, _index2.assertValueType)("array"), /*istanbul ignore next*/(0, _index2.assertEach)( /*istanbul ignore next*/(0, _index2.assertNodeType)("Decorator")))
     }
   }
 });

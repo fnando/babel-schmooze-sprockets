@@ -49,7 +49,7 @@ var /*istanbul ignore next*/_babelTemplate = require("babel-template");
 /*istanbul ignore next*/
 var _babelTemplate2 = _interopRequireDefault(_babelTemplate);
 
-var /*istanbul ignore next*/_each = require("lodash/collection/each");
+var /*istanbul ignore next*/_each = require("lodash/each");
 
 /*istanbul ignore next*/
 var _each2 = _interopRequireDefault(_each);
