@@ -1,5 +1,11 @@
 # Babel + Schmooze + Sprockets
 
+[![Travis-CI](https://travis-ci.org/fnando/babel-schmooze-sprockets.png)](https://travis-ci.org/fnando/babel-schmooze-sprockets)
+[![Code Climate](https://codeclimate.com/github/fnando/babel-schmooze-sprockets/badges/gpa.svg)](https://codeclimate.com/github/fnando/babel-schmooze-sprockets)
+[![Test Coverage](https://codeclimate.com/github/fnando/babel-schmooze-sprockets/badges/coverage.svg)](https://codeclimate.com/github/fnando/babel-schmooze-sprockets/coverage)
+[![Gem](https://img.shields.io/gem/v/babel-schmooze-sprockets.svg)](https://rubygems.org/gems/babel-schmooze-sprockets)
+[![Gem](https://img.shields.io/gem/dt/babel-schmooze-sprockets.svg)](https://rubygems.org/gems/babel-schmooze-sprockets)
+
 Bring Babel 6 to Ruby on Rails.
 
 ## Installation
