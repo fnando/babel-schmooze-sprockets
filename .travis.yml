@@ -1,4 +1,14 @@
 language: ruby
+cache: bundler
+sudo: false
 rvm:
-  - 2.3.0
-before_install: gem install bundler -v 1.11.2
+- 2.3.1
+env:
+  global:
+    secure: K+zYkx6YMXUNAkl19HxF2wTsfgVmQqLbFjYonJcJF2RLOWJuBeJQL6l+sSeTdWHId4aq43oSaDhivIkCZm8ADv5WCcZcavAHs2tseKG9l+yJbQ0ODG+Asde8OLV7m+Jaw2b3LzEjlVO2UBXelEnRRimwd8ltI9KTCGsU52repbeb4biMUBS6Ee4TCgq0Gze6a7Hjr1vrWXLaVp5Q5iyyX/FBzg0BIY256YvCI0qNVT/SUSk2HXrbBmNXthAnizl6CpRjniLS8muuqfW9HZJY8w+4AmELTZr0ogztwTSz8e0mB2+I6OGPR9Rse1Mhl4PaNidrHbi17nFeA1itYz5eK8rjxtvk7B2Uo4lLbp6BWHJPvPYDY2/ABYWYPA6WSlX66iPC6LV/r5lGpaNuC19ZjoPBzIOoHNHOP+PzTNZDoR6pIDC/HK5P4j5G5w8ATlfs/9lDtgpo9FwyrMD44RWJGyT5nSY2fgAwzVxlSWJ8bfq4fJejfia4Ap4C+jlgARQY17ToDhCf2ApweXUE1pt6hlUvWRViT8ayn2dUlu0d1WQUbxFqUIA051Yy5Ifa8fpbX+CGyM+xUvf7vyt9yGk9OX3MUJKmg1lOKWFk7BNcQGA4tzTdICjrdiOJxzyYW+9+dnvHNmERnivx3tsGcARFRhrVJsrmyvaODbRumKTTot8=
+notifications:
+  email: false
+before_install:
+  - nvm install 6
+  - nvm use 6
+  - node -v
