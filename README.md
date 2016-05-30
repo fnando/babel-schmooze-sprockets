@@ -111,6 +111,10 @@ Make sure you require `babel-polyfill` in your main file (e.g. `application.js`)
 //= require babel-polyfill/dist/polyfill
 ```
 
+## Articles
+
+- [Using ES2015 with Asset Pipeline on Ruby on Rails](http://nandovieira.com/using-es2015-with-asset-pipeline-on-ruby-on-rails).
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
