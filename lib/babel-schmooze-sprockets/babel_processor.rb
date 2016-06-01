@@ -5,6 +5,7 @@ module BabelSchmoozeSprockets
     ].freeze
 
     DEFAULT_PLUGINS = %w[
+      external-helpers
       transform-async-to-generator
       transform-es2015-modules-amd
       transform-es3-member-expression-literals

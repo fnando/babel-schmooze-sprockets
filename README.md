@@ -26,6 +26,21 @@ Or install it yourself as:
 
 ## Usage
 
+Include the following directive to your main file (e.g. `application.js`), before anything is loaded:
+
+```js
+//= require babel
+```
+
+This will load [external-helpers](http://babeljs.io/docs/plugins/external-helpers/) and [polyfill](http://babeljs.io/docs/usage/polyfill/).
+
+You can manually load each of those files too:
+
+```js
+//= require babel/external-helpers
+//= require babel/polyfill
+```
+
 ### Defaults
 
 By default, this is what you get:
@@ -105,10 +120,14 @@ You may configure the presets and plugins lists as you wish.
 
 ### Using async/await
 
-Make sure you require `babel-polyfill` in your main file (e.g. `application.js`) like the following:
+Make sure you require `babel-polyfill` in your main file (e.g. `application.js`) by adding:
 
 ```js
-//= require babel-polyfill/dist/polyfill
+//= require babel
+
+// or
+
+//= require babel/polyfill
 ```
 
 ## Articles
@@ -120,6 +139,10 @@ Make sure you require `babel-polyfill` in your main file (e.g. `application.js`)
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+
+### Updating NPM packages
+
+To update NPM packages before releasing a new version, just run `./bin/update-npm-deps`.
 
 ## Contributing
 

@@ -61,15 +61,9 @@ var square = function square(n) {
 define("mod", ["foo"], function (_foo) {
   "use strict";
 
-  var _foo2 = _interopRequireDefault(_foo);
-
-  function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {
-      default: obj
-    };
-  }
+  var _foo2 = babelHelpers.interopRequireDefault(_foo);
 });
-    JS
+  JS
   end
 
   def test_caching_takes_filename_into_account

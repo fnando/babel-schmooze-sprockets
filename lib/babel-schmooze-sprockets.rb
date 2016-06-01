@@ -14,7 +14,7 @@ module BabelSchmoozeSprockets
 
   begin
     require "rails"
-    require "babel-schmooze-sprockets/railtie"
+    require "babel-schmooze-sprockets/engine"
   rescue LoadError
   end
 end
