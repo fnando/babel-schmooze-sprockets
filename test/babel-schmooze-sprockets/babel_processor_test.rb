@@ -109,8 +109,8 @@ define("mod2", [], function () {
     BabelSchmoozeSprockets::BabelProcessor.new(
       root_dir: File.expand_path("#{__dir__}/../.."),
       options: {
-        presets: BabelSchmoozeSprockets::BabelProcessor::DEFAULT_PRESETS,
-        plugins: BabelSchmoozeSprockets::BabelProcessor::DEFAULT_PLUGINS,
+        presets: BabelSchmoozeSprockets::BabelProcessor.default_presets,
+        plugins: BabelSchmoozeSprockets::BabelProcessor.default_plugins,
       }.merge(options)
     )
   end

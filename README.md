@@ -71,7 +71,7 @@ this is how you'll have to call:
 
 ```js
 // app/assets/javascripts/application.js
-//= require almond/almond
+//= require almond
 //= require_dir ./lib
 //= require_dir ./application
 //= require_self
@@ -107,8 +107,8 @@ Rails.application.config.assets.configure do |env|
   processor = BabelSchmoozeSprockets::BabelProcessor.new({
     root_dir: File.expand_path(Rails.root.to_s),
     options: {
-      presets: BabelSchmoozeSprockets::BabelProcessor::DEFAULT_PRESETS,
-      plugins: BabelSchmoozeSprockets::BabelProcessor::DEFAULT_PLUGINS + ["your-custom-plugin"]
+      presets: BabelSchmoozeSprockets::BabelProcessor.default_presets,
+      plugins: BabelSchmoozeSprockets::BabelProcessor.default_plugins + ["your-custom-plugin"]
     }
   })
 
@@ -130,6 +130,51 @@ Make sure you require `babel-polyfill` in your main file (e.g. `application.js`)
 //= require babel/polyfill
 ```
 
+### Using React
+
+This plugin also adds React's JSX precompilation. Assuming you're using Almond and that React is available on your load path, this is how your `application.js` may look like:
+
+```js
+//= require babel
+//= require react
+//= require almond
+//= require react/shims
+//= require_tree .
+//= require_self
+
+require(["lib/boot"]);
+```
+
+**NOTE**: `react/shims` will register the modules from React (which registers anonymous modules). This should be loaded only if you're using Almond. If you don't use this you won't be able to `import` React and ReactDOM, but they'll be available as global variables.
+
+![Only load `babel/react-shim` if you're using Almond.js.](http://messages.hellobits.com/warning.svg?message=Only%20load%20%60react%2Fshims%60%20if%20you're%20using%20Almond.js.)
+
+Let's create our first React component. Create a file at `app/assets/javascripts/components/hello.jsx`.
+
+```jsx
+import React from "react";
+
+export default class Hello extends React.Component {
+  render() {
+    return <div>Hello from React</div>;
+  }
+}
+```
+
+Now let's boot up our component. Create a file at `app/assets/javascripts/lib/boot.jsx` with the following content:
+
+```jsx
+import React from "react";
+import ReactDOM from "react/dom";
+import Hello from "../components/hello";
+
+ReactDOM.render(<Hello />, document.querySelector("#application"));
+```
+
+You'll also need to create a new container on your layout file (e.g. `application.html.erb`); add something like `<div id="application"></div>`. Remember that the id must match the element you selected on `lib/boot.jsx`.
+
+If you're all set, reload the page; you should be seeing the message "Hello from React".
+
 ## Articles
 
 - [Using ES2015 with Asset Pipeline on Ruby on Rails](http://nandovieira.com/using-es2015-with-asset-pipeline-on-ruby-on-rails).
@@ -142,7 +187,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ### Updating NPM packages
 
-To update NPM packages before releasing a new version, just run `./bin/update-npm-deps`.
+To update NPM packages before releasing a new version, run `./bin/update-npm-deps`.
 
 ## Contributing
 

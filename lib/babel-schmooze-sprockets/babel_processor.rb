@@ -1,27 +1,35 @@
 module BabelSchmoozeSprockets
   class BabelProcessor
-    DEFAULT_PRESETS = %w[
-      es2015
-    ].freeze
+    def self.default_presets
+      @default_presets ||= %w[es2015]
+    end
 
-    DEFAULT_PLUGINS = %w[
-      external-helpers
-      transform-async-to-generator
-      transform-es2015-modules-amd
-      transform-es3-member-expression-literals
-      transform-es3-property-literals
-      transform-function-bind
-    ].freeze
+    def self.default_plugins
+      @default_plugins ||= %w[
+        external-helpers
+        transform-async-to-generator
+        transform-es2015-modules-amd
+        transform-es3-member-expression-literals
+        transform-es3-property-literals
+        transform-function-bind
+      ]
+    end
 
-    DEFAULT_BABEL_OPTIONS = {
-      presets: DEFAULT_PRESETS,
-      plugins: DEFAULT_PLUGINS
-    }.freeze
+    def self.default_babel_options
+      @default_babel_options ||= {
+        presets: default_presets,
+        plugins: default_plugins
+      }
+    end
+
+    def self.root_dir
+      File.expand_path("#{__dir__}/../..")
+    end
 
     def self.instance
       @instance ||= BabelProcessor.new(
-        root_dir: File.expand_path("#{__dir__}/../.."),
-        options: BabelProcessor::DEFAULT_BABEL_OPTIONS
+        root_dir: root_dir,
+        options: default_babel_options
       )
     end
 
