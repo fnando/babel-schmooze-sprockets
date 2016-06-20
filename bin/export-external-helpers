@@ -1,0 +1,3 @@
+#!/usr/bin/env node
+var core = require("babel-core");
+console.log(core.buildExternalHelpers(undefined, "var"));

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -e
+npm install
+updtr
+./bin/export-external-helpers > app/assets/javascripts/babel/external-helpers.js
+cp node_modules/babel-polyfill/dist/polyfill.js app/assets/javascripts/babel/polyfill.js
+npm dedup
+npm prune
