@@ -34,7 +34,7 @@ module BabelSchmoozeSprockets
 
       @cache_key = [
         self.class.name,
-        Babel.new(@options.fetch(:root_dir)).version,
+        babel.version,
         VERSION,
         @options
       ].freeze
@@ -61,15 +61,17 @@ module BabelSchmoozeSprockets
           options[:moduleId] ||= input[:name]
         end
 
-        Babel
-          .new(@options.fetch(:root_dir))
-          .transform(data, options)
+        babel.transform(data, options)
       end
 
       map = Sprockets::SourceMapUtils.decode_json_source_map(JSON.generate(result["map"]))
       map = Sprockets::SourceMapUtils.combine_source_maps(input[:metadata][:map], map["mappings"])
 
       {data: result["code"], map: map}
+    end
+
+    def babel
+      @babel ||= Babel.new(@options.fetch(:root_dir))
     end
   end
 end
