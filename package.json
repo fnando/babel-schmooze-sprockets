@@ -4,7 +4,7 @@
   "repository": "https://github.com/fnando/babel-schmooze-sprockets.git",
   "license": "MIT",
   "dependencies": {
-    "babel-core": "^6.9.1",
+    "babel-core": "^6.10.4",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-external-helpers": "^6.8.0",
     "babel-plugin-transform-async-to-generator": "^6.8.0",
