@@ -1,3 +1,4 @@
+//= require babel
 //= require almond/almond
 //= require_tree .
 //= require_self
