@@ -1,4 +1,4 @@
 module BabelSchmoozeSprockets
-  class Railtie < Rails::Engine
+  class Engine < Rails::Engine
   end
 end
